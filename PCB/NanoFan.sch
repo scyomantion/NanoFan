@@ -1,0 +1,252 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5F398B77
+P 3900 3200
+F 0 "A1" H 3900 2111 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 3900 2020 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3900 3200 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5F39CDA1
+P 1800 1450
+F 0 "J1" H 1908 1731 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 1908 1640 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 1800 1450 50  0001 C CNN
+F 3 "~" H 1800 1450 50  0001 C CNN
+	1    1800 1450
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5F39D9A8
+P 3250 1450
+F 0 "J2" H 3358 1731 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3358 1640 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 3250 1450 50  0001 C CNN
+F 3 "~" H 3250 1450 50  0001 C CNN
+	1    3250 1450
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5F39EF29
+P 4750 1350
+F 0 "J3" H 4858 1631 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 4858 1540 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 4750 1350 50  0001 C CNN
+F 3 "~" H 4750 1350 50  0001 C CNN
+	1    4750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5F39FA4E
+P 6050 1350
+F 0 "J4" H 6158 1631 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6158 1540 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 6050 1350 50  0001 C CNN
+F 3 "~" H 6050 1350 50  0001 C CNN
+	1    6050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0101
+U 1 1 5F3A06D1
+P 2350 1350
+F 0 "#PWR0101" H 2350 1200 50  0001 C CNN
+F 1 "+12V" V 2365 1478 50  0000 L CNN
+F 2 "" H 2350 1350 50  0001 C CNN
+F 3 "" H 2350 1350 50  0001 C CNN
+	1    2350 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 5F3A101D
+P 3850 1350
+F 0 "#PWR0102" H 3850 1200 50  0001 C CNN
+F 1 "+12V" V 3865 1478 50  0000 L CNN
+F 2 "" H 3850 1350 50  0001 C CNN
+F 3 "" H 3850 1350 50  0001 C CNN
+	1    3850 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1350 2350 1350
+Wire Wire Line
+	3450 1350 3850 1350
+$Comp
+L power:GND #PWR0103
+U 1 1 5F3A1B37
+P 2350 1250
+F 0 "#PWR0103" H 2350 1000 50  0001 C CNN
+F 1 "GND" V 2355 1122 50  0000 R CNN
+F 2 "" H 2350 1250 50  0001 C CNN
+F 3 "" H 2350 1250 50  0001 C CNN
+	1    2350 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F3A231B
+P 3850 1250
+F 0 "#PWR0104" H 3850 1000 50  0001 C CNN
+F 1 "GND" V 3855 1122 50  0000 R CNN
+F 2 "" H 3850 1250 50  0001 C CNN
+F 3 "" H 3850 1250 50  0001 C CNN
+	1    3850 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 1250 2350 1250
+Wire Wire Line
+	3450 1250 3850 1250
+Text GLabel 2350 1450 2    50   Input ~ 0
+SenseC1
+Text GLabel 2350 1550 2    50   Output ~ 0
+ControlC1
+Wire Wire Line
+	2000 1450 2350 1450
+Wire Wire Line
+	2000 1550 2350 1550
+Text GLabel 3850 1450 2    50   Input ~ 0
+SenseC2
+Text GLabel 3850 1550 2    50   Output ~ 0
+ControlC2
+Wire Wire Line
+	3450 1450 3850 1450
+Wire Wire Line
+	3450 1550 3850 1550
+$Comp
+L power:GND #PWR0105
+U 1 1 5F3A38D8
+P 3900 4550
+F 0 "#PWR0105" H 3900 4300 50  0001 C CNN
+F 1 "GND" H 3905 4377 50  0000 C CNN
+F 2 "" H 3900 4550 50  0001 C CNN
+F 3 "" H 3900 4550 50  0001 C CNN
+	1    3900 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4550 3900 4200
+Wire Wire Line
+	4000 4200 3900 4200
+Connection ~ 3900 4200
+$Comp
+L power:+12V #PWR0106
+U 1 1 5F3A440B
+P 3800 2050
+F 0 "#PWR0106" H 3800 1900 50  0001 C CNN
+F 1 "+12V" H 3815 2223 50  0000 C CNN
+F 2 "" H 3800 2050 50  0001 C CNN
+F 3 "" H 3800 2050 50  0001 C CNN
+	1    3800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2050 3800 2200
+$Comp
+L power:GND #PWR0107
+U 1 1 5F3A5027
+P 5200 1250
+F 0 "#PWR0107" H 5200 1000 50  0001 C CNN
+F 1 "GND" V 5205 1122 50  0000 R CNN
+F 2 "" H 5200 1250 50  0001 C CNN
+F 3 "" H 5200 1250 50  0001 C CNN
+	1    5200 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0108
+U 1 1 5F3A5627
+P 5200 1350
+F 0 "#PWR0108" H 5200 1200 50  0001 C CNN
+F 1 "+12V" V 5215 1478 50  0000 L CNN
+F 2 "" H 5200 1350 50  0001 C CNN
+F 3 "" H 5200 1350 50  0001 C CNN
+	1    5200 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 1250 5200 1250
+Wire Wire Line
+	4950 1350 5200 1350
+$Comp
+L power:GND #PWR0109
+U 1 1 5F3A614E
+P 6500 1250
+F 0 "#PWR0109" H 6500 1000 50  0001 C CNN
+F 1 "GND" V 6505 1122 50  0000 R CNN
+F 2 "" H 6500 1250 50  0001 C CNN
+F 3 "" H 6500 1250 50  0001 C CNN
+	1    6500 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0110
+U 1 1 5F3A66D7
+P 6500 1350
+F 0 "#PWR0110" H 6500 1200 50  0001 C CNN
+F 1 "+12V" V 6515 1478 50  0000 L CNN
+F 2 "" H 6500 1350 50  0001 C CNN
+F 3 "" H 6500 1350 50  0001 C CNN
+	1    6500 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 1250 6500 1250
+Wire Wire Line
+	6250 1350 6500 1350
+Text GLabel 5200 1450 2    50   Input ~ 0
+SenseF1
+Text GLabel 5200 1550 2    50   Output ~ 0
+ControlF1
+Text GLabel 6500 1450 2    50   Input ~ 0
+SenseF2
+Text GLabel 6500 1550 2    50   Output ~ 0
+ControlF2
+Wire Wire Line
+	4950 1450 5200 1450
+Wire Wire Line
+	4950 1550 5200 1550
+Wire Wire Line
+	6250 1450 6500 1450
+Wire Wire Line
+	6250 1550 6500 1550
+Text GLabel 3400 3000 0    50   Input ~ 0
+SenseF1
+Text GLabel 3400 3100 0    50   Input ~ 0
+SenseF2
+Text GLabel 3400 2900 0    50   Output ~ 0
+ControlF1
+Text GLabel 3400 3700 0    50   Output ~ 0
+ControlF2
+Text GLabel 3400 3500 0    50   Input ~ 0
+SenseC1
+Text GLabel 3400 3600 0    50   Input ~ 0
+SenseC2
+Text GLabel 3400 3300 0    50   Output ~ 0
+ControlC1
+Text GLabel 3400 3400 0    50   Output ~ 0
+ControlC2
+$EndSCHEMATC
