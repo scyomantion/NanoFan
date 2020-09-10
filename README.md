@@ -25,6 +25,6 @@ You need following per fan controller:
 
 - 2x JUMPER 04KR-6S-P - 04KR-6S-P 2" (PN: A04KR04KR26E51B)
 
-- 2x B4B-PH-K-S(LF)(SN)
+- 4x B4B-PH-K-S(LF)(SN)
 
 - 1x PCB from this project
