@@ -28,3 +28,7 @@ You need following per fan controller:
 - 4x B4B-PH-K-S(LF)(SN)
 
 - 1x PCB from this project
+
+## Impressum
+
+[Impressum](https://banjobyte.com/impressum.html)
